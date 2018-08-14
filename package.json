@@ -1,0 +1,30 @@
+{
+  "name": "weather-assistant-bot-by-godwin",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alloygodwin1/weatherapp-by-godwin.git"
+  },
+  "author": "godwin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alloygodwin1/weatherapp-by-godwin/issues"
+  },
+  "homepage": "https://github.com/alloygodwin1/weatherapp-by-godwin#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "dotenv": "^6.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.15.3",
+    "http": "0.0.0",
+    "request": "^2.81.0",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
