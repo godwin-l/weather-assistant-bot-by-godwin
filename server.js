@@ -24,13 +24,13 @@ io.on('connect', function(socket) {
     if(err){
           var log = "Please check whether you connected to internet or not.";
 	  console.log(log);
-	  socket.emit('weather-assistant reply', log );
+	  socket.emit('reply', log );
     } else {
       let weather = JSON.parse(body)
       if(weather.main == undefined){
 	   var log = "Please tell me the city name.";
 	   console.log(log);
-	   socket.emit('weather-assistant reply', log );
+	   socket.emit('reply', log );
       } else {
         let weatherDetails = 
 	   `It's ${weather.main.temp} degree Celsius in ${weather.name}.Pressure in ${weather.name} is ${weather.main.pressure} hPa and the Humidity is ${weather.main.humidity} %.
@@ -43,7 +43,7 @@ io.on('connect', function(socket) {
 		The Sun rises at ${weather.sys.sunrise} UTC and sets at ${weather.sys.sunset} UTC.`;
 		weather=weatherDetails;
 		console.log(weather);
-		socket.emit('weather-assistant reply', weather);
+		socket.emit('reply', weather);
       }
     }
   });
