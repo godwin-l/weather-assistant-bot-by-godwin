@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alloygodwin1/weatherapp-by-godwin.git"
+    "url": "git+https://github.com/alloygodwin1/weather-assistant-bot-by-godwin.git"
   },
   "author": "godwin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alloygodwin1/weatherapp-by-godwin/issues"
+    "url": "https://github.com/alloygodwin1/weather-assistant-bot-by-godwin/issues"
   },
-  "homepage": "https://github.com/alloygodwin1/weatherapp-by-godwin#readme",
+  "homepage": "https://github.com/alloygodwin1/weather-assistant-bot-by-godwin#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
     "dotenv": "^6.0.0",
@@ -26,5 +26,5 @@
     "socket.io": "^2.1.1"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "using nodejs and socket io"
 }
