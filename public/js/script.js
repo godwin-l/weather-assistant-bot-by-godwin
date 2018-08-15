@@ -43,7 +43,7 @@ function Voice(text) {
   microphone.speak(utterance);
 }
 
-socket.on('reply', function(replyData) {
+socket.on('assistantreply', function(replyData) {
   Voice(replyData);
   assistant.textContent = replyData;
 });
