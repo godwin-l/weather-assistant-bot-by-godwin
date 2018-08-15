@@ -2,8 +2,8 @@
 
 const socket = io();
 
-const outputYou = document.querySelector('.output-godwin');
-const outputBot = document.querySelector('.output-bot');
+const outputYou = document.querySelector('.godwin');
+const outputBot = document.querySelector('.weather-assistant');
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = new SpeechRecognition();
