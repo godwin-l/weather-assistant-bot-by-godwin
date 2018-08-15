@@ -1,7 +1,8 @@
+'use strict';
 
 const socket = io();
 
-const outputYou = document.querySelector('godwin');
+const outputYou = document.querySelector('.godwin');
 const outputBot = document.querySelector('.weather-assistant');
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -49,5 +50,6 @@ function synthVoice(text) {
 socket.on('reply', function(replyText) {
   synthVoice(replyText);
 
+  if(replyText == '') replyText = '(No answer...)';
   outputBot.textContent = replyText;
 });
