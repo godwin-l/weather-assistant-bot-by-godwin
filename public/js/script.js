@@ -1,55 +1,47 @@
-'use strict';
-
 const socket = io();
-
-const outputYou = document.querySelector('.godwin');
-const outputBot = document.querySelector('.weather-assistant');
+const godwin = document.querySelector('.godwin');
+const assistant = document.querySelector('.weather-assistant');
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-const recognition = new SpeechRecognition();
+const speech = new SpeechRecognition();
 
-recognition.lang = 'en-US';
-recognition.interimResults = false;
-recognition.maxAlternatives = 1;
+speech.lang = 'en-US';
+speech.interimResults = false;
+speech.maxAlternatives = 1;
 
 document.querySelector('button').addEventListener('click', () => {
-  recognition.start();
+  speech.start();
 });
 
-recognition.addEventListener('speechstart', () => {
-  console.log('Speech has been detected.');
+speech.addEventListener('speechstart', () => {
+  console.log('The Weather Assistant Bot has started to speak.');
 });
 
-recognition.addEventListener('result', (e) => {
-  console.log('Result has been detected.');
+speech.addEventListener('result', (data) => {
+  let last = data.results.length - 1;
+  let text = data.results[last][0].transcript;
 
-  let last = e.results.length - 1;
-  let text = e.results[last][0].transcript;
-
-  outputYou.textContent = text;
-  console.log('Confidence: ' + e.results[0][0].confidence);
-
+  godwin.textContent = text;
   socket.emit('city name', text);
 });
 
-recognition.addEventListener('speechend', () => {
-  recognition.stop();
+speech.addEventListener('speechend', () => {
+  speech.stop();
 });
 
-recognition.addEventListener('error', (e) => {
-  outputBot.textContent = 'Error: ' + e.error;
+speech.addEventListener('error', (data) => {
+  assistant.textContent = 'Please Check whether you have connected to internet or not';
 });
 
-function synthVoice(text) {
-  const synth = window.speechSynthesis;
+function Voice(text) {
+  const microphone = window.speechSynthesis;
   const utterance = new SpeechSynthesisUtterance();
   utterance.text = text;
-  synth.speak(utterance);
+  microphone.speak(utterance);
 }
 
-socket.on('reply', function(replyText) {
-  synthVoice(replyText);
-
-  if(replyText == '') replyText = '(No answer...)';
-  outputBot.textContent = replyText;
+socket.on('weather-assistant reply', function(replyData) {
+  Voice(replyData);
+  
+  assistant.textContent = replyData;
 });
