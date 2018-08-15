@@ -24,12 +24,12 @@ io.on('connect', function(socket) {
   request(url, function (err, response, body) {
     if(err){
 	  console.log(weather);
-	  socket.emit('reply', weather);
+	  socket.emit('assistantreply', weather);
     } else {
       let weather = JSON.parse(body)
       if(weather.main == undefined){
 	   console.log(weather);
-	   socket.emit('reply', weather);
+	   socket.emit('assistantreply', weather);
       } else {
         let weatherDetails = 
 	   `It's ${weather.main.temp} degree Celsius in ${weather.name}.Pressure in ${weather.name} is ${weather.main.pressure} hPa and the Humidity is ${weather.main.humidity} %.
@@ -42,7 +42,7 @@ io.on('connect', function(socket) {
 		The Sun rises at ${weather.sys.sunrise} UTC and sets at ${weather.sys.sunset} UTC.`;
 		weather=weatherDetails;
 		console.log(weather);
-		socket.emit('reply', weather);
+		socket.emit('assistantreply', weather);
       }
     }
   });
