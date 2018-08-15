@@ -3,6 +3,8 @@
 Stack Used : Nodejs,Socket io <br>
 User Interface : HTML,CSS<br>
 
+We have hosted our project in https://weather-bot-godwin.herokuapp.com/
+
 Input  : Voice Input using Voice Recogonisation
 Output : Speech using Speech Synthesis
 
