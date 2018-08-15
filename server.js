@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 
 const server = app.listen(5000, () => {
-  console.log('Server listening on port 5000);
+  console.log('Server listening on port 5000');
 });
 
 const io = require('socket.io')(server);
