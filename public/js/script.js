@@ -15,7 +15,7 @@ document.querySelector('button').addEventListener('click', () => {
 });
 
 speech.addEventListener('speechstart', () => {
-  console.log('Speech has been detected.');
+  console.log('Weather Assistant Bot has started to speak.');
 });
 
 speech.addEventListener('result', (data) => {
@@ -33,18 +33,17 @@ speech.addEventListener('speechend', () => {
 });
 
 speech.addEventListener('error', (data) => {
-  assistant.textContent = 'Error: ' + data.error;
+  assistant.textContent = 'Please check whether you have connected to internet';
 });
 
-function synthVoice(text) {
-  const synth = window.speechSynthesis;
+function Voice(text) {
+  const microphone = window.speechSynthesis;
   const utterance = new SpeechSynthesisUtterance();
   utterance.text = text;
-  synth.speak(utterance);
+  microphone.speak(utterance);
 }
 
 socket.on('reply', function(replyData) {
-  synthVoice(replyData);
-
+  Voice(replyData);
   assistant.textContent = replyData;
 });
