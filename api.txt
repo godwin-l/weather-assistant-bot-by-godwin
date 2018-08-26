@@ -1,0 +1,27 @@
+Weatherbit API
+
+a7d7af5a610844b3b78fcfea7847eaf5
+
+https://api.weatherbit.io/v2.0/history/agweather?lat=38.0&lon=-78.0&start_date=2018-08-17&end_date=2018-08-18&key=a7d7af5a610844b3b78fcfea7847eaf5
+
+
+
+
+Agro monitoring key
+
+9ae40b8fdec0b4d7bc95aa14b4393ce3
+
+
+
+http://api.agromonitoring.com/agro/1.0/soil?lat=38.410&lon=-98.349&appid=9ae40b8fdec0b4d7bc95aa14b4393ce3
+
+
+
+http://api.agromonitoring.com/agro/1.0/soil/history?lat=38.410&lon=-98.349&start=1517443200&end=1519776000&appid=9ae40b8fdec0b4d7bc95aa14b4393ce3
+
+
+
+dt Time of data calculation, unix, UTC
+t10 temperature on the 10 centimeters depth
+moisture soil moisture
+t0 surface temperature
