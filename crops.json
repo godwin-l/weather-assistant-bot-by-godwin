@@ -1,0 +1,74 @@
+[
+    {
+      "name" : "Rice",
+      "mintemp" : 22,
+      "maxtemp" : 32,
+      "minrainfall" : 150,
+      "maxrainfall" : 300,
+      "soil" : ""
+    },
+    {
+      "name" : "Wheat",
+      "mintemp" : 10,
+      "maxtemp" : 15,
+      "minrainfall" : 75,
+      "maxrainfall" : 100,
+      "soil" : ""
+    },
+    {
+      "name" : "Millets",
+      "mintemp" : 27,
+      "maxtemp" : 32,
+      "minrainfall" : 50,
+      "maxrainfall" : 100,
+      "soil" : ""
+    },
+    {
+      "name" : "Grams",
+      "mintemp" : 20,
+      "maxtemp" : 25,
+      "minrainfall" : 40,
+      "maxrainfall" : 45,
+      "soil" : ""
+    },
+    {
+      "name" : "Sugar Cane",
+      "mintemp" : 21,
+      "maxtemp" : 27,
+      "minrainfall" : 75,
+      "maxrainfall" : 150,
+      "soil" : ""
+    },
+    {
+      "name" : "Cotton",
+      "mintemp" : 21,
+      "maxtemp" : 30,
+      "minrainfall" : 50,
+      "maxrainfall" : 75,
+      "soil" : ""
+    },
+    {
+      "name" : "Oilseeds",
+      "mintemp" : 20,
+      "maxtemp" : 30,
+      "minrainfall" : 150,
+      "maxrainfall" : 300,
+      "soil" : ""
+    },
+    {
+      "name" : "Tea",
+      "mintemp" : 20,
+      "maxtemp" : 30,
+      "minrainfall" : 150,
+      "maxrainfall" : 300,
+      "soil" : ""
+    },
+    {
+      "name" : "Coffee",
+      "mintemp" : 15,
+      "maxtemp" : 28,
+      "minrainfall" : 150,
+      "maxrainfall" : 250,
+      "soil" : ""
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+      "description" : "Little or no vegetation",
+      "minrainfall" : 0,
+      "maxrainfall" : 100
+    },
+    {
+      "description" : "Some scrubs, some grassland",
+      "minrainfall" : 101,
+      "maxrainfall" : 400
+    },
+    {
+      "description" : "Scrubs & bushes, grassland",
+      "minrainfall" : 401,
+      "maxrainfall" : 600
+    },
+    {
+      "description" : "Bushes to woodland, grassland",
+      "minrainfall" : 601,
+      "maxrainfall" : 1200
+    },
+    {
+      "description" : "Forest and woodland",
+      "minrainfall" : 1200,
+      "maxrainfall" : 1500
+    },
+    {
+      "description" : "Tropical rain forest",
+      "minrainfall" : 1501,
+      "maxrainfall" : 3000
+    }
+]

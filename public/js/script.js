@@ -2,6 +2,8 @@ const socket = io();
 
 const godwin = document.querySelector('.godwin');
 const assistant = document.querySelector('.weather-assistant');
+const soil = document.querySelector('.weather-soil');
+
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const speech = new SpeechRecognition();
@@ -47,3 +49,9 @@ socket.on('assistantreply', function(replyData) {
   Voice(replyData);
   assistant.textContent = replyData;
 });
+
+socket.on('soilreply', function(replySoil) {
+  Voice(replySoil);
+  soil.textContent = replySoil;
+});
+
