@@ -1,0 +1,52 @@
+[
+    {
+      "name" : "potato",
+      "minvalue" : 4.5 ,
+      "maxvalue" : 6.0
+    },
+    {
+      "name" : "pumpkin",
+      "minvalue" : 5.5 ,
+      "maxvalue" : 7.5
+    },
+    {
+      "name" : "cucumber",
+      "minvalue" : 5.5 ,
+      "maxvalue" : 7.5
+    },
+    {
+      "name" : "cauliflower",
+      "minvalue" : 5.5 ,
+      "maxvalue" : 7.5
+    },
+    {
+      "name" : "tomato",
+      "minvalue" : 5.5 ,
+      "maxvalue" : 7.5
+    },
+    {
+      "name" : "onion",
+      "minvalue" : 6.0 ,
+      "maxvalue" : 7.0
+    },
+    {
+      "name" : "lettuce",
+      "minvalue" : 6.0 ,
+      "maxvalue" : 7.0
+    },
+    {
+      "name" : "cabbage",
+      "minvalue" : 6.0 ,
+      "maxvalue" : 7.5
+    },
+    {
+      "name" : "spinach",
+      "minvalue" : 6.0 ,
+      "maxvalue" : 7.5
+    },
+    {
+      "name" : "Beans",
+      "minvalue" : 6.0 ,
+      "maxvalue" : 7.5
+    }
+]

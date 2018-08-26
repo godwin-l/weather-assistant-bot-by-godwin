@@ -138,6 +138,48 @@ app.get('/', function (req, res) {
 	});
 	
 	
+	var minval = 5.0;
+	var maxval = 5.5;
+	
+	db.collection('acidity').find({ $or: [ { minvalue: { $gte: minval, $lte: maxval } }, { maxvalue: { $gte: minval, $lte: maxval } } ] }).toArray(function(err, result) {
+     if(err) throw err;
+	 var data = result;
+	 var acid = [];
+	 var datalen = data.length;
+	 for(i=0;i<datalen;i++)
+	 {
+		var acidity = data[i].name;
+		 acid.push(acidity);
+	 }
+	 var allacid = acid.join(',');
+	
+	console.log("The crops that can be planted based on acidity are " + allacid);
+	
+ //	res.render('index', { allacid: allacid  });
+	});
+	
+	
+	var minmois = 60;
+	var maxmois = 70;
+	
+	db.collection('moisure').find({ $or: [ { minpercent: { $gte: minmois, $lte: maxmois } }, { maxpercent: { $gte: minmois, $lte: maxmois } } ] }).toArray(function(err, result) {
+     if(err) throw err;
+	 var data = result;
+	 var moisture = [];
+	 var moislen = data.length;
+	 for(i=0;i<moislen;i++)
+	 {
+		var mois = data[i].name;
+		 moisture.push(mois);
+	 }
+	 var allmoisture = moisture.join(',');
+	
+	console.log("The crops that can be planted based on moisture are " + allmoisture);
+	
+ //	res.render('index', { allmoisture: allmoisture  });
+	});
+	
+	
 	
 	var minraindesc = 401;
 	var maxraindesc = 600;
@@ -151,8 +193,6 @@ app.get('/', function (req, res) {
 	
  //	res.render('index', { descript: descript  });
 	});
-	
-
 
 });
 });

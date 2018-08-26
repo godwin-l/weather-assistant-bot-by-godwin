@@ -1,0 +1,42 @@
+[
+    {
+      "name" : "rice",
+      "minpercent" : 41 ,
+      "maxpercent" : 80
+    },
+    {
+      "name" : "elderberry",
+      "minpercent" : 41 ,
+      "maxpercent" : 60
+    },
+    {
+      "name" : "apple",
+      "minpercent" : 21 ,
+      "maxpercent" : 40
+    },
+    {
+      "name" : "maize",
+      "minpercent" : 41 ,
+      "maxpercent" : 80
+    },
+    {
+      "name" : "blueberry",
+      "minpercent" : 41 ,
+      "maxpercent" : 60
+    },
+    {
+      "name" : "cranberry",
+      "minpercent" : 51 ,
+      "maxpercent" : 80
+    },
+    {
+      "name" : "strawberry",
+      "minpercent" : 21 ,
+      "maxpercent" : 60
+    },
+	{
+      "name" : "grapes",
+      "minpercent" : 21 ,
+      "maxpercent" : 60
+    }
+]
