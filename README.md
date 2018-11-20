@@ -1,4 +1,4 @@
-# Weather Assistant and Crop Prediction Bot By Team INFINITE LOOP (Godwin,Guru Prakash,Lakshmi Narayanan)
+# Weather Assistant and Crop Prediction Bot By Team INFINITE LOOP 
 
 Stack Used : Nodejs,Socket io <br>
 User Interface : HTML,CSS<br>
